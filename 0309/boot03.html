@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부트스트랩 2일차 3번파일</title>
+    <link rel="stylesheet" href="../resource/css/bootstrap.css">
+    <script src="../resource/js/bootstrap.bundle.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4 p-5 border-bottom">
+        <div>
+            <h4>image 사용하기</h4>
+
+            <img src="../resource/images/펭수.jpg" alt=""><br>
+            <img src="../resource/images/펭수.jpg" alt="" class="rounded"><br><br>
+            <img src="../resource/images/펭수.jpg" alt="" class="rounded-circle" style="width: 200px; height: 200px;"><br><br>
+            <img src="../resource/images/펭수.jpg" alt="" class="img-thumbnail"><br><br>
+
+            <br>
+
+            <h4>이미지 정렬하기</h4>
+            <div class="clearfix">
+                <img src="../resource/images/미첼.png" alt="" class="float-start">
+                <img src="../resource/images/미첼.png" alt="" class="float-end">
+            </div>
+
+            <br>
+
+            <h4>이미지 중앙 정렬</h4>
+            <div>
+                <img src="../resource/images/피카츄.jpg" alt="" class="d-block mx-auto">
+            </div>
+                <hr>
+            <div class="text-center">
+                <img src="../resource/images/피카츄.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-3 text-center">
+                <!-- w : 부모크기만큼 이미지 크기 100% 사용하란 뜻(width 100% 인듯) -->
+                <img src="../resource/images/피카츄.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-sm-4">
+                <p>뉴스기사내용 피카츄 펭수 다 귀엽다</p>
+            </div>
+        </div>
+    </div>
+
+<br>
+
+    <h4>반응형 이미지</h4>
+
+    <div>
+        <img src="../resource/images/애플.png" alt=""><br>
+        <img src="../resource/images/애플.png" alt="" class="img-fluid">
+    </div>
+
+    <br>
+
+    <div>
+        <h3>버튼 사용하기</h3>
+
+        <br>
+        
+        <h4>기본 버튼, 버튼 테마 색상 사용</h4>
+        <div>
+            <button type="button">부트스트랩 미적용 버튼</button>
+            <button type="button" class="btn">부트스트랩 적용 버튼</button>
+            <a href="#" class="btn btn-link">링크에 버튼 사용</a>
+            <input type="button" class="btn" value="input 태그에 부트스트랩 버튼 적용">
+        </div>
+
+        <br>
+
+        <h4>테마 색상 버튼</h4>
+        <div>
+            <button type="button" class="btn btn-primary">primary 버튼</button>
+            <button type="button" class="btn btn-secondary">secondary 버튼</button>
+            <button type="button" class="btn btn-success">success 버튼</button>
+            <button type="button" class="btn btn-info">info 버튼</button>
+            <button type="button" class="btn btn-warning">warning 버튼</button>
+            <button type="button" class="btn btn-danger">dnager 버튼</button>
+            <button type="button" class="btn btn-light">light 버튼</button>
+            <button type="button" class="btn btn-dark">dark 버튼</button>
+        </div>
+
+        <br>
+
+        <h4>아웃 라인 버튼</h4>
+        <div>
+            <button type="button" class="btn btn-outline-primary">outline-primary 버튼</button>
+            <button type="button" class="btn btn-outline-secondary">outline-secondary 버튼</button>
+            <button type="button" class="btn btn-outline-success">outline-success 버튼</button>
+            <button type="button" class="btn btn-outline-info">outline-info 버튼</button>
+            <button type="button" class="btn btn-outline-warning">outline-warning 버튼</button>
+            <button type="button" class="btn btn-outline-danger">outline-dnager 버튼</button>
+            <button type="button" class="btn btn-outline-light">outline-light 버튼</button>
+            <button type="button" class="btn btn-outline-dark">outline-dark 버튼</button>
+        </div>
+
+        <br>
+
+        <h4>버튼 크기 설정</h4>
+
+        <div>
+            <button type="button" class="btn btn-lg btn-primary">큰 버튼</button>
+            <button type="button" class="btn btn-primary">기본 버튼</button>
+            <button type="button" class="btn btn-sm btn-primary">작은 버튼</button>
+        </div>
+
+        <br>
+
+        <h4>블록 레벨 버튼</h4>
+        <div class="p-2 m-3 border" style="width: 300px;">
+            <button type="button" class="btn btn-primary">기본 크기의 버튼</button>
+        </div>
+
+        <div class="d-grid p-2 m-3 border" style="width: 300px;">
+            <button class="btn btn-primary" type="button">블록 레벨 버튼</button>
+        </div>
+        
+        <br>
+
+        <h4>버튼의 활성/비활성</h4>
+        <div>
+            <button type="button" class="btn btn-primary">버튼 기본 상태</button>
+            <button type="button" class="btn btn-primary active">버튼 활성 상태</button>
+            <button type="button" class="btn btn-primary disabled">버튼 비활성 상태</button>
+
+            <br><br>
+
+            <a href="#" class="btn btn-link">링크 기본 상태</a>
+            <a href="#" class="btn btn-link active">링크 활성 상태</a>
+            <a href="#" class="btn btn-link disabled">링크 비활성 상태</a>
+        </div>
+    </div>
+
+<br><hr><br>
+
+    <div class="container">
+        <h3>글자 테마 색상</h3>
+        <div>
+            <p class="text-mute">text-mute</p>
+            <p class="text-body">text-body</p>
+            <p class="text-primary">text-primary</p>
+            <p class="text-secondary">text-secondary</p>
+            <p class="text-success">text-success</p>
+            <p class="text-info">text-info</p>
+            <p class="text-warning">text-warning</p>
+            <p class="text-dange">text-danger</p>
+            <p class="text-light bg-dark">text-light</p>
+            <p class="text-dart">text-dart</p>
+            <p class="text-white bg-dark">text-white</p>
+        </div>
+
+        <br>
+
+        <h3>링크 테마 색상</h3>
+        <div>
+            <a href="#" class="link-primary">text-primary</a>
+            <a href="#" class="link-secondary">text-secondary</a>
+            <a href="#" class="link-success">text-success</a>
+            <a href="#" class="link-info">text-info</a>
+            <a href="#" class="link-warning">text-warning</a>
+            <a href="#" class="link-dange">text-danger</a>
+            <a href="#" class="link-light bg-dark">text-light</a>
+            <a href="#" class="link-dart">text-dart</a>
+
+            <br>
+
+            <h3 class="text-black-50">text-black-50</h3>
+            <h3 class="text-white-50 bg-dark">text-white-50</h3>
+            <h3 class="text-opacity-25 text-primary">text-opacity-25</h3>
+            <h3 class="text-opacity-50 text-primary">text-opacity-50</h3>
+            <h3 class="text-opacity-75 text-primary">text-opacity-75</h3>
+            <h3 class="text-opacity-100 text-primary">text-opacity-100</h3>
+        </div>
+    </div>
+
+<br><hr><br>
+
+    <div class="container">
+        <h3>배경 테마 색상 사용하기</h3>
+
+        <div class="box bg-primary border m-3">bg-primary</div>
+        <div class="box bg-secondary border m-3">bg-secondary</div>
+        <div class="box bg-success border m-3">bg-success</div>
+        <div class="box bg-info border m-3">bg-info</div>
+        <div class="box bg-warning border m-3">bg-warning</div>
+        <div class="box bg-danger border m-3">bg-danger</div>
+        <div class="box bg-light border m-3">bg-light</div>
+        <div class="box bg-dark border m-3">bg-dark</div>
+        <div class="box bg-body border m-3">bg-body</div>
+        <div class="box bg-white border m-3">bg-white</div>
+
+        <h3>transparent와 light, white, body의 차이</h3>
+        <div style="width: 150px; height: 500px; background-color: dodgerblue;">
+            <div class="box bg-transparent border m-3">bg-transparent</div>
+            <div class="box bg-light border m-3">bg-light</div>
+            <div class="box bg-body border m-3">bg-body</div>
+            <div class="box bg-white border m-3">bg-white</div>
+            <!-- transparent는 색이없는 투명이다. light와 white, body는 흰색으로 다르다 -->
+        </div>
+
+        <br>
+
+        <div class="bg-info m-3 p-4">
+            <div class="border m-3 bg-transparent">bg- transparent</div>
+            <div class="border m-3 bg-success bg-opacity-10">bg-opacity-10</div>
+            <div class="border m-3 bg-success bg-opacity-25">bg-opacity-25</div>
+            <div class="border m-3 bg-success bg-opacity-50">bg-opacity-50</div>
+            <div class="border m-3 bg-success bg-opacity-75">bg-opacity-75</div>
+            <div class="border m-3 bg-success bg-opacity-100">bg-opacity-100</div>
+        </div>
+    </div>
+
+<br><hr><br>
+
+    <div class="container">
+        <h3>spacing 사용</h3>
+
+        <div class="border border-5 d-flex p-5">
+            <div class="box bg-primary m-5"></div>
+            <divbox class="box bg-danger"></divbox>
+        </div>
+
+        <div class="border border-5 d-flex pt-3 ps-3">
+            <div class="box bg-primary mt-3 me-3"></div>
+            <divbox class="box bg-danger"></divbox>
+        </div>
+
+        <div class="border border-5 d-flex px-3 py-3">
+            <div class="box bg-primary mx-3"></div>
+            <divbox class="box bg-danger my-3"></divbox>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지 만들기3</title>
+    <link rel="stylesheet" href="../resource/css/bootstrap.css">
+    <script src="../resource/js/bootstrap.bundle.js"></script>
+    <style>
+        #hov:hover {
+            background-color: lightgray;
+            color: black !important;
+        }
+
+        .nav-pills {
+        --bs-nav-pills-border-radius: 0;
+        padding: 8px;
+        --bs-nav-pills-link-active-color: #fff !important;
+        --bs-nav-pills-link-active-bg: #9c9c9c;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="container-fluid bg-dark nav-justified fixed-top">
+        <ul class="nav justify-content-around">
+            <li class="nav-item m-2" id="hov"><a href="#" class="nav-link text-white" style="text-decoration: none;">HOME</a></li>
+            <li class="nav-item m-2" id="hov"><a href="#" class="nav-link text-white" style="text-decoration: none;">ABOUT</a></li>
+            <li class="nav-item m-2" id="hov"><a href="#" class="nav-link text-white" style="text-decoration: none;">MENU</a></li>
+            <li class="nav-item m-2" id="hov"><a href="#" class="nav-link text-white" style="text-decoration: none;">WHERE</a></li>
+        </ul>
+    </nav>
+    <main class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0">
+                    <img src="../resource/images/bakery.jpg" alt="" class="card-img-top img-fluid my-5" style="height: 730px;">
+                    <div class="card-img-overlay d-flex align-items-center justify-content-center text-white">
+                        <div class="d-block text-center">
+                            <h1 class="display-1"><b>the</b></h1>
+                            <h1 class="display-1 my-5"><b>cafe</b></h1>
+                        </div>
+                    </div>
+                    <!-- card가 끝까지 안차서 마진줬는데 이거 카드 왜이럼 -->
+                    <div class="card-img-overlay d-flex align-items-end justify-content-between mb-5">
+                        <div class="bg-dark text-white">
+                            <p class="p-0 m-0">Open from 6am to 5pm</p>
+                        </div>
+                        <div class="text-white">
+                            <p class="p-0 m-0">15 Adr street, 5015</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-10 d-block mx-auto">
+                <div class="container">
+                    <h4 class="text-center mb-5"><span class="bg-dark text-white">ABOUT THE CAFE</span></h4>
+                    <p class="my-3">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="my-3">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+                    <div class="container bg-light border-start border-5 my-3">
+                        <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+                        <p>Chef, Coffeeist and Owner: Liam Brown</p>
+                    </div>
+                    <img src="../resource/images/cafe.jpg" alt="" class="w-100 my-3">
+                    <p><b>Opening hours:</b> everyday from 6am to 5pm.</p>
+                    <p><b>Address:</b> 15 Adr street, 5015, NY</p>
+
+                    <h4 class="text-center my-5"><span class="bg-dark text-white">THE MENU</span></h4>
+
+
+                    <div class="card shadow rounded-0">
+                        <ul class="nav nav-pills nav-justified border-bottom shadow ">
+                            <li class="nav-item">
+                                <a href="#Eat" class="nav-link active text-dark" data-bs-toggle="tab">Eat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Drink" class="nav-link text-dark" data-bs-toggle="tab">Drink</a>
+                            </li>
+                        </ul>
+            
+                        <div class="tab-content">
+                            <!-- li 개수 만큼 만들어 주면 됨 -->
+                            <!-- fade 넣으면 글자가 사라졌다가 나타는것 처럼 됨 -->
+                            <div class="tab-pane active container" id="Eat">
+                                <h5 class="mt-5 py-3">Bread Basket</h5>
+                                <p class="text-muted">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                                <h5 class="mt-5 py-3">Honey Almond Granola with Fruits</h5>
+                                <p class="text-muted">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                                <h5 class="mt-5 py-3">Belgian Waffle</h5>
+                                <p class="text-muted">Vanilla flavored batter with malted flour 7.50</p>
+                                <h5 class="mt-5 py-3">Scrambled eggs</h5>
+                                <p class="text-muted">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                                <h5 class="mt-5 py-3">Blueberry Pancakes</h5>
+                                <p class="text-muted">With syrup, butter and lots of berries 8.50</p>
+                            </div>
+                            <div class="tab-pane container" id="Drink">
+                                <h5 class="mt-5 py-3">Coffee</h5>
+                                <p class="text-muted">Regular coffee 2.50</p>
+                                <h5 class="mt-5 py-3">Chocolato</h5>
+                                <p class="text-muted">Chocolate espresso with milk 4.50</p>
+                                <h5 class="mt-5 py-3">Corretto</h5>
+                                <p class="text-muted">Whiskey and coffee 5.00</p>
+                                <h5 class="mt-5 py-3">Iced tea</h5>
+                                <p class="text-muted">Hot tea, except not hot 3.00</p>
+                                <h5 class="mt-5 py-3">Soda</h5>
+                                <p class="text-muted">Coke, Sprite, Fanta, etc. 2.50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="../resource/images/coffee.jpg" alt="" class="w-100 my-5">
+                    <h4 class="text-center mb-5"><span class="bg-dark text-white">WHERE TO FIND US</span></h4>
+                    <p class="m-0">Find us at some address at some place.</p>
+                    <img src="../resource/images/street.jpg" alt="" class="w-100 my-3">
+                    <p><kbd>FYI!</kbd> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                    <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+
+                    <table class="table table-borderless w-100">
+                        <tr>
+                            <td><input type="text" placeholder="Name" class="w-100 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" min="1" max="10" placeholder="How many people" class="w-100 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="datetime-local" class="w-100 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Message / Special requirements" class="w-100 py-2"></td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn rounded-0 bg-dark text-white my-2">SEND MESSAGE</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid p-4">
+        <p class="text-center">Powered by <a class="text-black">w3.css</a></p>
+    </footer>
+</body>
+</html>

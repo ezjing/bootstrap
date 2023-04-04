@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스_home</title>
+    <link rel="stylesheet" href="../UI구현_이지원/resource/css/bootstrap.css">
+    <script src="../UI구현_이지원/resource/js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid border-top border-3 border-danger border-opacity-50" style="background-image: url(../UI구현_이지원/resource/img/brick3.jpg);">
+            <nav class="container-lg navbar navbar-expand">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/icon_facebook.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/icon_twitter.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/icon_blog.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/icon_instgram.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/icon_youtube.png" alt=""></a></li>
+                </ul>
+                <a href="baskin_home.html" class="navbar-brand mx-auto"><img src="../UI구현_이지원/resource/img/logo.png" alt="" style="width: 92px; height: 92px;" class=""></a>
+                <!-- align-items-center로 텍스트, 이미지 수직 정렬 -->
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a href="#" class="nav-link ps-5 mx-2 ms-auto">고객센터</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link mx-2">CONTACT US</a></li>
+                    <!-- checkbox 만들기 -->
+                    <li class="nav-item">
+                        <!-- Button trigger modal -->
+                        <a href="#modal" class="nav-link mx-2" data-bs-toggle="modal"><img src="../UI구현_이지원/resource/img/icon_reading_glasses.PNG" alt="" style="width: 54px; height: 54px;"></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <!-- 테두리 지우려고 table 지움 -->
+                                        <table class="">
+                                            <tr class="align-items-top">
+                                                <th>제품명</th>
+                                                <td>
+                                                    <select name="" id="" class="form-select">
+                                                        <option selected value="">전체</option>
+                                                        <option value="아이스크림">아이스크림</option>
+                                                        <option value="아이스크림케이크">아이스크림케이크</option>
+                                                        <option value="음료">음료</option>
+                                                        <option value="커피">커피</option>
+                                                        <option value="디저트">디저트</option>
+                                                        <option value="block pack">block pack</option>
+                                                        <option value="ready pac">ready pack</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <label class="제품명" for="제품명"></label>
+                                                    <input type="text" id="제품명" class="bg-secondary bg-opacity-25 rounded-0 shadow-none p-1">
+                                                </td>
+                                                <th class="px-5">
+                                                    해시태그
+                                                </th>
+                                                <td>
+                                                    <div>
+                                                        <label class="해시태그" for="해시태그"></label>
+                                                        <input type="text" id="해시태그" class="bg-secondary bg-opacity-25 rounded-0 shadow-none p-1" style="width: 400px;">
+                                                    </div>
+                                
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <div>
+                                                        <dl>
+                                                            <dt class="text-secondary" style="font-size: 14px;">자주 찾는 해시태그</dt>
+                                                            <dd class="opacity-50" style="font-size: 14px;">
+                                                                <a href="#" class="text-danger">#딸기연유퐁당</a>
+                                                                <a href="#" class="text-danger">#페코의스트로베리푸딩</a>
+                                                                <a href="#" class="text-danger">#스트로베리하트모찌</a>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    알레르기 성분
+                                                </th>
+                                                <td colspan="3">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-3">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check1">
+                                                                <label for="check1" class="form-check-label">계란</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check5">
+                                                                <label for="check5" class="form-check-label">밀</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check2">
+                                                                <label for="check2" class="form-check-label">대두</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check6">
+                                                                <label for="check6" class="form-check-label">복숭아</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check3">
+                                                                <label for="check3" class="form-check-label">돼지고기</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check7">
+                                                                <label for="check7" class="form-check-label">우유</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check4">
+                                                                <label for="check4" class="form-check-label">땅콩</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="check8">
+                                                                <label for="check8" class="form-check-label">없음</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check1">
+                                                            <label for="check1" class="form-check-label">계란</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check2">
+                                                            <label for="check2" class="form-check-label">대두</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check3">
+                                                            <label for="check3" class="form-check-label">돼지고기</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check4">
+                                                            <label for="check4" class="form-check-label">땅콩</label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check5">
+                                                            <label for="check5" class="form-check-label">밀</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check6">
+                                                            <label for="check6" class="form-check-label">복숭아</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check7">
+                                                            <label for="check7" class="form-check-label">우유</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input type="checkbox" class="form-check-input" id="check8">
+                                                            <label for="check8" class="form-check-label">없음</label>
+                                                        </div>
+                                                    </div> -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-danger opacity-50 rounded-pill py-2 px-5" data-bs-dismiss="modal">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- navbar 집가서 col로 나눠 정렬 해보기 -->
+        <div class="container-fluid border-top border-bottom border-dark border-opacity-50">
+            <nav class="container-lg navbar navbar-expand">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active">LOGIN</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">JOIN</a></li>
+                </ul>
+
+                <!-- dropdown-toggle 빼면 화살표 사라짐 -->
+                <div class="btn-group mx-4 px-3">
+                    <button type="button" class="btn rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        FLAVOR OF THE MONTH
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img src="../UI구현_이지원/resource/img/img_monthly_fom.png" alt="" class="w-100"></a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group mx-4 px-3">
+                    <button type="button" class="btn rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        MENU
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">아이스크림</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">아이스크림케이크</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">음료</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">커피</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">디저트</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group mx-4 px-3">
+                    <button type="button" class="btn rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        영양 성분 및 알레르기
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">아이스크림</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">음료</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">커피</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group mx-4 px-3">
+                    <button type="button" class="btn rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        EVENT
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">진행중이벤트</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">당첨자발표</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group mx-4 px-3">
+                    <button type="button" class="btn rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        STORE
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">매장찾기</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">고객센터</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">단체주문</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group ms-4 ps-3">
+                    <button type="button" class="btn rounded-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        ABOUT
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">공지사항</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">보도자료</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">채용정보</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">점포개설문의</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="baskin_contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="border-bottom border-2 border-warning">
+        <nav class="nav mb-1">
+            <img src="../UI구현_이지원/resource/img/peko1.PNG" alt="" class="d-block w-100">
+        </nav>
+        <!-- carousel 이미지넘기기 -->
+        <div id="carousel" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../UI구현_이지원/resource/img/banner1.PNG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../UI구현_이지원/resource/img/banner2.PNG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../UI구현_이지원/resource/img/banner3.PNG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../UI구현_이지원/resource/img/banner4.PNG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../UI구현_이지원/resource/img/banner5.PNG" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../UI구현_이지원/resource/img/banner6.PNG" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <div class="container-lg pb-5">
+            <h5 class="text-center p-3 my-5"><b>BR EVENT</b></h5>
+            <div id="carousel2" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../UI구현_이지원/resource/img/brevent1.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../UI구현_이지원/resource/img/brevent2.PNG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../UI구현_이지원/resource/img/brevent3.PNG" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5">
+            <img src="../UI구현_이지원/resource/img/brmenu.PNG" alt="" class="card-img-top w-100">
+            <div class="card-img-overlay">
+                <h5 class="card-title text-center p-3"><b>BR MENU</b></h5>
+            </div>
+        </div>
+
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-center p-3 my-5"><b>BR STORE</b></h5>
+                </div>
+                <div class="col-6">
+                    <h5 class="text-center p-3 my-5"><b>HAPPY ORDER & DELIVERY</b></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 p-0">
+                    <img src="../UI구현_이지원/resource/img/img_store.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-6 p-0">
+                    <img src="../UI구현_이지원/resource/img/img_happyorder_delivery.png" alt="" class="w-100">
+                </div>
+            </div>
+
+            <h5 class="text-center pt-5 pb-3 mt-5"><b>SNS</b></h5>
+            <nav class="navbar navbar-expand justify-content-center pb-5 mb-5">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/sns_facebook.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/sns_twitter.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/sns_blog.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/sns_instagram.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/sns_youtube.png" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+        <br><br>
+    </main>
+
+
+    <footer>
+        <div class="container-lg">
+            <nav class="navbar navbar-expand justify-content-center my-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">점포개설문의</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">채용문의</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">윤리신고센터</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">이용약관</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active">개인정보처리방침</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">영상정보처리기기운영관리방침</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">안전보건 경영방침</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">거래희망회사 사전등록</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-fluid bg-light">
+            <nav class="container-lg navbar navbar-expand justify-content-center">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a href="#" class="nav-link mx-4"><img src="../UI구현_이지원/resource/img/btn_happypoint.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link mx-4"><img src="../UI구현_이지원/resource/img/btn_happymarket.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link mx-4"><img src="../UI구현_이지원/resource/img/btn_spc_story.png" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ms-4 p-0"><img src="../UI구현_이지원/resource/img/btn_norton.gif" alt=""></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><img src="../UI구현_이지원/resource/img/btn_ccm_2.png" alt="" style="width: 31px; height: 31px;"></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link me-5 p-0"><img src="../UI구현_이지원/resource/img/btn_ksa.png" alt=""></a></li>
+                    <li class="nav-item">
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-white border dropdown-toggle shadow mx-5" data-bs-toggle="dropdown" aria-expanded="false">
+                                FAMILY SITE
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">배스킨스쿨</a></li>
+                                <li><a class="dropdown-item" href="#">SPC그룹사이트</a></li>
+                                <li><a class="dropdown-item" href="#">SPC MAGAZINE</a></li>
+                                <li><a class="dropdown-item" href="#">BR코리아</a></li>
+                                <li><a class="dropdown-item" href="#">해피포인트카드</a></li>
+                                <li><a class="dropdown-item" href="#">파스쿠찌</a></li>
+                                <li><a class="dropdown-item" href="#">삼립</a></li>
+                                <li><a class="dropdown-item" href="#">파리바게트</a></li>
+                                <li><a class="dropdown-item" href="#">던킨도너츠</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="navbar navbar-expand p-3 my-3">
+            <a href="#" class="navbar-brand mx-auto"><img src="../UI구현_이지원/resource/img/footer_logo.png" alt=""></a>
+        </nav>
+        <div class="text-center">
+            <span class="text-center" style="font-size: 11px;">사업자 등록번호 : 303-81-09535</span>
+            <span class="text-center" style="font-size: 11px;">비알코리아(주) 대표이사 이주연</span>
+            <span class="text-center" style="font-size: 11px;">서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</span>
+        </div>
+        <div class="text-center">
+            <span style="font-size: 11px;">TEL : 080-555-3131</span>
+            <span style="font-size: 11px;">개인정보관리책임자 : 김경우</span>
+        </div>
+
+        <p class="text-secondary text-center pb-5 my-3 mb-5" style="font-size: 11px;">Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

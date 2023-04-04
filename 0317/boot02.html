@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지만들기 2</title>
+    <link rel="stylesheet" href="../resource/css/bootstrap.css">
+    <script src="../resource/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <header></header>
+    <nav class="container-fluid bg-light shadow navbar navbar-expand-md navbar-dark fixed-top">
+        <p class="navbar-barnd ms-4 me-auto p-2 m-0">Gourmet au Catering</p>
+        <!-- a태그 이용해서 해당 항목으로 이동하도록 해보자 -->
+        <ul class="navbar-nav me-4 d-flex">
+            <li class="nav-item me-4">About</li>
+            <li class="nav-item me-4">Menu</li>
+            <li class="nav-item me-4">Contact</li>
+        </ul>
+    </nav>
+
+
+
+    <main class="container">
+        <!-- 이건 로우주고 콜10 한 다음(꼭 12칸 안해도된다) d-block mx-auto해도 됨 -->
+        <div class="card mb-3">
+            <img src="../resource/images/burger.jpg" alt="" class="card-img-top w-100">
+            <div class="card-img-overlay d-flex align-items-end">
+                <h1 class="text-muted">Le Catering</h1>
+            </div>
+        </div>
+
+        <div class="row border-bottom">
+            <div class="col-6">
+                <img src="../resource/images/cake.jpg" alt="" class="w-75 mb-5 mx-auto d-block">
+            </div>
+            <div class="col-6">
+                <h2 class="text-center">About Catering</h2>
+                <h5 class="text-center mt-5">Tradition since 1889</h5>
+                <p class="mt-3">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                <p class="text-muted mt-3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="row border-bottom">
+            <div class="col-6 my-5">
+                <h2 class="text-center">Our Menu</h2>
+                <h4 class=" mt-5">Bread Basket</h4>
+                <p class="text-muted">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <h4 class=" mt-5">Honey Almond Granola with Fruits</h4>
+                <p class="text-muted">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <h4 class=" mt-5">Belgian Waffle</h4>
+                <p class="text-muted">Vanilla flavored batter with malted flour 7.50</p>
+                <h4 class=" mt-5">Scrambled eggs</h4>
+                <p class="text-muted">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <h4 class=" mt-5">Blueberry Pancakes</h4>
+                <p class="text-muted">ith syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div class="col-6">
+                <img src="../resource/images/fry.jpg" alt="" class="w-75 mx-auto d-block my-5">
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12">
+                <h2>Contact</h2>
+                <p class="my-3">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                <h5 class="text-primary text-opacity-75">Catering Service, 42nd Living St, 43043 New York, NY</h5>
+                <p class="my-3">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                <table class="table">
+                    <tr>
+                        <td><input type="text" placeholder="Name" class="border-0 w-100 py-2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" min="1" max="10" placeholder="How many people" class="border-0 w-100 py-2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="datetime-local" class="border-0 w-100 py-2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Message / Special requirements" class="border-0 w-100 py-2"></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn bg-secondary bg-opacity-25 my-2">SEND MESSAGE</button>
+            </div>
+
+        </div>
+    </main>
+    <footer class="container-fluid bg-secondary bg-opacity-25 p-4">
+        <p class="text-center">Powered by <a class="text-black">w3.css</a></p>
+    </footer>
+</body>
+</html>

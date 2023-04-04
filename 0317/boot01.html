@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부트스트랩 예제 1</title>
+    <link rel="stylesheet" href="../resource/css/bootstrap.css">
+    <script src="../resource/js/bootstrap.bundle.js"></script>
+    <style>
+        /* 호버시 그림자 나오게 하는방법 */
+        #t1:hover {
+            box-shadow: 2px 2px 30px #ddd;
+        }
+        #t2:hover {
+            box-shadow: 2px 2px 30px #ddd;
+        }
+        #t3:hover {
+            box-shadow: 2px 2px 30px #ddd;
+        }
+
+        /* 호버시 색상변경 */
+        .btn-success {
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #207315;
+            --bs-btn-hover-border-color: #2d6c14;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main class="container-fluid-sm mx-3 mt-5">
+        <h3 class="mb-3">Responsive Pricing Tables</h3>
+        <div class="row">
+            <div class="col-4">
+                <table class="table table-bordered text-center" id="t1">
+                    <tr class="bg-dark text-white">
+                        <th class="p-4 fs-3">Basic</th>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>10GB</b> Storage</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>10</b> Emails</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>10</b> Domains</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>Endless</b> Support</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">
+                            <blockquote class="blockquote">
+                                <p class="fs-3">$ 10</p>
+                                <footer class="blockquote-footer">per month</footer>
+                            </blockquote>
+                            
+                        </td>
+                    </tr>
+                    <tr class="bg-secondary bg-opacity-25">
+                        <td class="p-4">
+                            <!-- rounded-0 : 직각처리 -->
+                            <button type="submit" class="btn btn-success text-white px-4 py-2 rounded-0">Sign up</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-4">
+                <table class="table table-bordered text-center" id="t2">
+                    <tr class="bg-success text-white">
+                        <th class="p-4 fs-3">Pro</th>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>25GB</b> Storage</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>25</b> Emails</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>25</b> Domains</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>Endless</b> Support</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">
+                            <blockquote class="blockquote">
+                                <p class="fs-3">$ 25</p>
+                                <footer class="blockquote-footer">per month</footer>
+                            </blockquote>
+                            
+                        </td>
+                    </tr>
+                    <tr class="bg-secondary bg-opacity-25">
+                        <td class="p-4">
+                            <button type="submit" class="btn btn-success text-white px-4 py-2 rounded-0">Sign up</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-4">
+                <table class="table table-bordered text-center" id="t3">
+                    <tr class="bg-dark text-white">
+                        <th class="p-4 fs-3">Premium</th>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>50GB</b> Storage</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>50</b> Emails</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>50</b> Domains</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3"><b>Endless</b> Support</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">
+                            <blockquote class="blockquote">
+                                <p class="fs-3">$ 50</p>
+                                <footer class="blockquote-footer">per month</footer>
+                            </blockquote>
+                            
+                        </td>
+                    </tr>
+                    <tr class="bg-secondary bg-opacity-25">
+                        <td class="p-4">
+                            <button type="submit" class="btn btn-success text-white px-4 py-2 rounded-0">Sign up</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
